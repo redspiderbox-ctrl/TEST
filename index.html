@@ -636,7 +636,7 @@ tfoot td { padding: 12px; border-bottom: none; border-top: 2px solid var(--borde
         doc.setFontSize(8); doc.setTextColor(30, 41, 59); doc.setFont(undefined, "bold");
         doc.text("TOTAL QTY:", uw - 80, fy + 7, { align: "right" }); doc.setTextColor(5, 150, 105); doc.text(String(gtA), uw - 60, fy + 7, { align: "left" });
         doc.setTextColor(30, 41, 59); doc.text("TOTAL KONV.:", uw - 30, fy + 7, { align: "right" }); doc.setTextColor(37, 99, 235); doc.text(String(gtB), uw - 10, fy + 7, { align: "left" });
-        doc.save("part_demand_report.pdf"); showToast("File PDF Part Demand berhasil diunduh.", "success");
+        doc.save("SJOB_report.pdf"); showToast("File PDF Part Demand berhasil diunduh.", "success");
     });
 
     function appendNotes(exp) {
