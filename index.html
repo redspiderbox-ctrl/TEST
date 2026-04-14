@@ -619,7 +619,7 @@ tfoot td { padding: 12px; border-bottom: none; border-top: 2px solid var(--borde
         for (var i = 0; i < data3.length; i++) { var r = data3[i]; exp.push({ "Part Demand": r["Part Demand / Part"]||"", "Lot": r["Lot"]||"", "Attribute": r["Attribute"]||"", "QTY": r["QTY / Qty Transaksi"]||"", "QTY Konversi": r["QTY Konversi"]||"", "UM Konversi": r["UM Konversi"]||"", "Remarks 1": r["Remarks 1"]||"", "Remarks 2": r["Remarks 2"]||"", "Nomor Service Job": r["Nomor Service Job / Catatan"]||"" }); }
         var ws = XLSX.utils.json_to_sheet(exp); ws["!cols"] = [{wch:35},{wch:18},{wch:18},{wch:14},{wch:18},{wch:16},{wch:20},{wch:20},{wch:30}];
         var wb = XLSX.utils.book_new(); XLSX.utils.book_append_sheet(wb, ws, "Part Demand");
-        XLSX.writeFile(wb, "part_demand_data.xlsx"); showToast("File Excel Part Demand berhasil diunduh.", "success");
+        XLSX.writeFile(wb, "Data SJOB Bekas.xlsx"); showToast("File Excel Part Demand berhasil diunduh.", "success");
     });
 
     // ========== EXPORT PDF TAB 3 ==========
